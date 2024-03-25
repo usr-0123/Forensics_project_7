@@ -1,0 +1,288 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(images/contact.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
+.menu-bar
+{
+    background: aqua;
+    text-align: center;
+}
+ .menu-bar ul
+ {
+    display:inline-flex ;
+    list-style: none;
+    color: black;
+}
+ .menu-bar ul li
+  {
+      width: 190px;
+      margin: 15px;
+    padding: 15px;
+
+
+}
+.menu-bar ul li a
+{
+text-decoration: none;
+color: black;
+}
+.active, .menu-bar ul li:hover 
+{
+    background: blanchedalmond;
+    border-radius: 3;
+
+}
+.menu-bar .fa
+{
+    margin-right: 8px;
+
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(red, green, blue);
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul 
+{
+    display: block;
+    margin: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li 
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background:white;
+    border-radius: 0;
+    text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li :last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover 
+{
+    color: thistle;
+}
+.sub-menu-2
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-2
+{
+    display: block;
+    position: absolute;
+    background: rgb(red, green, blue);
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+.menu-bar ul li:hover .sub-menu-2 ul 
+{
+    display: block;
+    margin: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu-2 ul li 
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background:white;
+    border-radius: 0;
+    text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu-2 ul li :last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li a:hover 
+{
+    color: thistle;
+}
+.sub-menu-3
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-3
+{
+    display: block;
+    position: absolute;
+    background: rgb(red, green, blue);
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+.menu-bar ul li:hover .sub-menu-3 ul 
+{
+    display: block;
+    margin: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu-3 ul li 
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background:white;
+    border-radius: 0;
+    text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu-3 ul li :last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-3 ul li a:hover 
+{
+    color: thistle;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(238, 231, 231);
+  }
+  .row{
+    position: relative;
+    text-align: right;
+    color: rgb(238, 231, 231);
+  }
+  
+  
+  .welcome-text {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+ 
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .btn-group button {
+    background-color: #04AA6D; 
+    border: 1px solid green; 
+    color: white; 
+    padding: 10px 190px; 
+    cursor: pointer;
+    float: left; 
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; 
+  }
+  
+  
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  .btn-group button:hover {
+    background-color: #3e8e41;
+  }
+  .button {
+    border-radius: 4px;
+    background-color: #724b3f;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    max-width: 420px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px auto;
+    
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact-us {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
